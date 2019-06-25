@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.sapientbytes.reactfire;
 
 import android.support.multidex.MultiDexApplication;
 

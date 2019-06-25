@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "612946512608",
+    "firebase_url": "https://reactfire-7682c.firebaseio.com",
+    "project_id": "reactfire-7682c",
+    "storage_bucket": "reactfire-7682c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612946512608:android:418523aa1edc0b15",
+        "android_client_info": {
+          "package_name": "com.sapientbytes.reactfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612946512608-r44eohjiu6ecsr6p68qk5q7p2uagv7ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz6elmIfYxS-uTUtmigmC8ullcZRjGKi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612946512608-r44eohjiu6ecsr6p68qk5q7p2uagv7ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

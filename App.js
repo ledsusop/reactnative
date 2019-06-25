@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Platform, Image, Text, View, ScrollView, Button, Alert } from 'react-native';
 
 import firebase from 'react-native-firebase';
 
@@ -17,7 +17,15 @@ export default class App extends React.Component {
     // await firebase.analytics().logEvent('foo', { bar: '123'});
   }
 
+  _onPressButton() {
+    firebase.analytics().logEvent('onPressButton', { target: 'Alert' });
+    Alert.alert('You Clicked the Button.');
+  }
+
   render() {
+
+    firebase.analytics().setCurrentScreen('HOME');
+
     return (
       <ScrollView>
         <View style={styles.container}>
@@ -56,6 +64,12 @@ export default class App extends React.Component {
             {firebase.notifications.nativeModuleExists && <Text style={styles.module}>notifications()</Text>}
             {firebase.perf.nativeModuleExists && <Text style={styles.module}>perf()</Text>}
             {firebase.storage.nativeModuleExists && <Text style={styles.module}>storage()</Text>}
+            <Button
+            onPress={this._onPressButton}
+            title="Click"
+            color="#00ffff"
+            accessibilityLabel="Invoke anaytics"
+            ></Button>
           </View>
         </View>
       </ScrollView>
